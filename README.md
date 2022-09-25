@@ -6,6 +6,7 @@ Binaries are compiled using pyinstaller
 All binaries are located in dist folder
 
 Instructions to run the Binary:
+
 1) Config file -- Update the config file as per your environment, and keep under location 
 /home/yugabyte/firedrill/config.txt
 
@@ -14,7 +15,7 @@ Instructions to run the Binary:
 
 3) Create test env as per config. It expect a YB cluster with 3 nodes (each node has 1 tserver and 1 master server) and RF 3.
 
-Environment specification:
+Development Environment specification:
 
 1) OS
 
@@ -39,3 +40,11 @@ ssh-python                0.10.0
 ssh2-python               1.0.0
 zope.event                4.5.0
 zope.interface            5.4.0
+
+4) pyinstaller
+
+Create the binary with -F option to include required module as well in the binary
+
+$pyinstaller Exercise1.py -F
+
+This will create the binary "Exercise1" in "dist" sub-folder
