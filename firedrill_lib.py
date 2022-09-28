@@ -1,6 +1,6 @@
 def get_config():
     var={}
-    with open("/home/yugabyte/firedrill/config.txt","r") as file:
+    with open("config.txt","r") as file:
         for line in file:
             line=line.strip()
 

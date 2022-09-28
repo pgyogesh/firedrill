@@ -1,4 +1,4 @@
-from read_file import get_config
+from firedrill_lib import get_config
 import subprocess
 
 var = get_config()
