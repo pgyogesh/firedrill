@@ -1,4 +1,5 @@
 from firedrill_lib import get_config
+import
 import subprocess
 
 print("Running Exercise 1")
