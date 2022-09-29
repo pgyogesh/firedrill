@@ -1,0 +1,7 @@
+server1_ip='10.212.0.42'
+server2_ip='10.212.0.41'
+server3_ip='10.212.0.43'
+key_location='/opt/yugabyte/yugaware/data/keys/5750e3d8-1797-4677-b55c-46af8e3dfc5d/yb-dev-gcp_5750e3d8-1797-4677-b55c-46af8e3dfc5d-key.pem'
+ssh_port='54422'
+install_location='/home/yugabyte/tserver/bin'
+tls_location='/home/yugabyte/yugabyte-tls-config/'

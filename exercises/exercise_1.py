@@ -1,6 +1,7 @@
 from firedrill_lib import get_config
 import subprocess
 
+print("Running Exercise 1")
 var = get_config()
 
 for k in var:
