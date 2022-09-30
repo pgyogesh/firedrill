@@ -1,7 +1,7 @@
 from execises import *
 import random
 
-listOfExercises = [exercise_1, exercise_2]
+listOfExercises = [exercise_1]
 
 def callRandomExercise():
     random.choice(listOfExercises)()
