@@ -3,7 +3,6 @@
 ## Let's break and learn
 
 - Binaries are compiled using pyinstaller
-- All binaries are located in dist folder
 
 ### Instructions to run the Binary:
 
@@ -12,13 +11,14 @@
     - Sample config file:
 
         ```
-        server1_ip=10.9.89.163
-        server2_ip=10.9.123.173
-        server3_ip=10.9.85.165
-        key_location=/opt/yugabyte/yugaware/data/keys/7817bb7f-b511-4264-85f3-7949916412f4/yb-dev-aws_ec2_user_alma_ami_7817bb7f-b511-4264-85f3-7949916412f4-key.pem
-        ssh_port=54422
-        install_location=/home/yugabyte/yb-software/yugabyte-2.14.2.0-b25-centos-x86_64/bin/
-        tls_location=/home/yugabyte/yugabyte-tls-config/
+        [global]
+        server1_ip = 10.212.0.50
+        server2_ip = 10.212.0.51
+        server3_ip = 10.212.0.52
+        key_path = /opt/yugabyte/yugaware/data/keys/26183b50-dec2-458a-ac03-27f8a9b2d95f/yb-dev-gcp_26183b50-dec2-458a-ac03-27f8a9b2d95f-key.pem 
+        ssh_port = 54422
+        install_path = /home/yugabyte/tserver/bin
+        tls_path = /home/yugabyte/yugabyte-tls-config/
         ```
 
 - Run the binary from YB platform server from yugabyte user
@@ -43,19 +43,10 @@
 
 - pip modules installed and version:
     ```
-    dotnetcli
-    altgraph                  0.17.2
-    gevent                    21.12.0
-    greenlet                  1.1.3
-    parallel-ssh              2.12.0
-    pip                       20.2.4
-    pyinstaller               5.4.1
-    pyinstaller-hooks-contrib 2022.10
-    setuptools                50.3.2
-    ssh-python                0.10.0
-    ssh2-python               1.0.0
-    zope.event                4.5.0
-    zope.interface            5.4.0
+    pyinstaller==5.4.1
+    pyinstaller-hooks-contrib==2022.10
+    paramiko==2.11.0
+    configparser==5.0.2
     ```
 
 
